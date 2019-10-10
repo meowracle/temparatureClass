@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex01</title>
+</head>
+<body>
+<script>
+    let Temparature = function (temparature) {
+        this.temparature = temparature;
+        this.convertToFahrenheit = function () {
+            return temparature*1.8+32;
+        }
+        this.convertToKenvin = function () {
+            return temparature + 273.15;
+        }
+    }
+    let temparature1 = new Temparature(25);
+    alert("doi sang thang Fahrenheit la "+temparature1.convertToFahrenheit());
+    alert("doi sang thang Kenvin la " + temparature1.convertToKenvin());
+</script>
+</body>
+</html>
